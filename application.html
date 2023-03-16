@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/application.css">
+  <title>東のポートフォリオサイト</title>
+</head>
+<body>
+<header>
+  <div class="header">
+    <a href="index.html"><h1><img src="image/titleLogo.png" alt="" class="headerLogo"></h1></a>
+    <div class="menu-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>    
+  </div>
+  <nav class="linkMenu">
+    <ul>
+      <li><a href="index.html">top</a></li>
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="application.html">application</a></li>
+      <li><a href="">blog</a></li>
+      <li><a href="hobby.html">hobby</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="pageTitle"><img src="image/appLogo.png" alt=""></h1>
+  <section class="partation pageLink">    
+    <img src="image/smartPhone.png" alt="dogIcon">
+    <h2>目次</h2>
+  </section>
+
+  <div class="noteLink">
+    <ul style="list-style: circle;margin-left: 30px;">
+      <li><a href="#app1">席替えアプリ[席替えLottery]</a>
+        <ul class="change-seat">
+          <li><a href="#cs-overview">アプリの概要</a></li>
+          <li><a href="#cs-motivation">作成動機</a></li>
+          <li><a href="#cs-language">使用言語について</a></li>
+          <li><a href="#cs-how-to">使い方</a></li>
+        </ul>
+      </li>
+      <li><a href="#app2">誕生日当て太郎</a>
+        <ul class="birthday">
+          <li><a href="#bd-overview">アプリの概要</a></li>
+          <li><a href="#bd-motivation">作成動機</a></li>
+          <li><a href="#bd-language">使用言語について</a></li>
+          <li><a href="#bd-how-to">使い方</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="partation">    
+    <img src="image/smartPhone.png" alt="smartPhoneIcon">
+    <h2 id="app1">席替えアプリ「席替えLottery」</h2>
+  </section>
+  <div id="changeSeatApp">
+    <h3 id="cs-overview">
+      <img id="cs-app1" src="image/app1.png" alt="app1">
+      アプリの概要</h3>
+    <div>
+      <div class="slideImage">
+        <img id="cs-app2" src="image/app2.png" alt="app2">
+        <img id="cs-app3" src="image/app3.png" alt="app3">
+        <img id="cs-app4" src="image/app4.png" alt="app4">
+      </div>
+
+      <p class="text">このアプリは、学校内で行われる「席替え」を効率化させ、さらに盛り上げるためのアプリケーションです。<br><br>
+      教室の席配置、男女の人数、席を固定する生徒の人数などを設定し座席を作成します。その後、出席番号をランダムで配置し、席を確定させるというものです。<br><br>
+      こだわった機能は「ルーレット機能」です。ボタンを押せば席が一瞬で決まることも魅力的ではありますが、やはりエンターテインメント性も取り入れたいということで、この機能を実装しました。<br><br>
+      一方、席替えをする側としては「特定の生徒を離したい」などの裏事情があるのが現実です。この機能を実装するためのアルゴリズムを考え中で、今後アップデートしていきたいと思います。
+      </p>
+    </div>
+
+    <h3 id="cs-motivation">作成動機</h3>
+    <p class="text">席替えは中高生にとっては月に一度の重大イベントです。とりあえず盛り上がるイベントではありますが、どうしてもマンネリ化してしまいます。また、毎回<br>
+      ・くじを作って<br>
+      ・配布して<br>
+      ・集計して<br>
+      ・座席表を作る<br>
+      毎回これをするのは、結構面倒なんですよね。そんな「面倒くささ」をなくすために開発したのがこのアプリです。</p>
+
+    <h3 id="cs-language">使用言語について</h3>
+    <p class="text">
+      現在、このアプリケーションはiOS端末でのみ使用できます。開発言語はiOSアプリ開発専用の言語「swift」を使用しています。MacBookAirでXCodeというアプリケーション上で開発が可能で、SwiftUI,StoryBoradという２通りの開発方法があります。このアプリはStoryBoardで開発しています。
+    </p>
+
+    <h3 id="cs-how-to">使い方</h3>
+    <p class="text">
+      ①設定を開き、縦と横の席数とクラスの人数を入力する。<br>
+      ②男女の人数を入力する(任意)。<br>
+      ③席を固定する人数を入力する(任意)。<br>
+      ④席を作成ボタンをタップしてスタート。<br>
+      ⑤指示に従って画面をタップしていくと結果を得られる。
+      <a href="https://apps.apple.com/jp/app/%E5%B8%AD%E6%9B%BF%E3%81%88lottery/id6443669177">アプリをする取得</a>
+    </p>
+  </div>
+  <section class="partation">    
+    <img src="image/smartPhone.png" alt="smartPhoneIcon">
+    <h2 id="app2">誕生日当て太郎</h2>
+  </section>
+  <h3 id="bd-overview">
+    <img id="bd-app1" src="image/birthday1.png" alt="app1">
+    アプリの概要</h3>
+  <div id="birthdayApp">
+      <div class="slideImage">
+        <img id="bd-app2" src="image/birthday2.png" alt="app2">
+        <img id="bd-app3" src="image/birthday4.png" alt="app3">
+        <img id="bd-app4" src="image/birthday3.png" alt="app4">
+      </div>
+
+      <p class="text">
+        web上のアプリケーション。ある規則に従った数字がランダムに表に現れます。表の下には「ある」「ない」の簡単なボタンが設置されており、正しく解答ができれば「あなたの誕生日」を当てることができます！というアプリケーションです。<br>
+      </p>
+
+    <h3 id="bd-motivation">作成動機</h3>
+    <p class="text">
+      以前からプログラミングに興味があり、少し独学していました。タイミングよく「webアプリプログラマー養成科」という職業訓練を受講することが決定し、その中で学習した内容を使って開発をしてみたかった、というのが作成動機です。<br>
+      誕生日を当てるアルゴリズム自体は今回考えたものではなく、前から知っていたものです。
+    </p>
+
+    <h3 id="bd-language">使用言語について</h3>
+    <p class="text">
+      HTML,CSSでページをマークアップし、JavaScriptで動きを付けました。<br><br>
+      １ページで構成されており、
+      Tableタグやdivタグは最初からHTMLに用意しています。そして、設置したボタンをクリックすることでページが更新されるようにプログラムをしています。JavaScriptの「関数」や「addEventListener」の復習となりました。
+    </p>
+
+     <h3 id="bd-how-to">使い方</h3>
+    <p class="text">
+      画面に表示された指示に従って「ある」「ない」のボタンをクリックするだけです。アルゴリズム自体はとても簡単で「２進数」の性質を使っています。<br><br>
+     <a href="https://shgpnd.github.io/birthday/">アプリを体験する</a>
+     </p>
+  </div>
+</main>
+<section class="contact">
+  <h2>contact</h2>
+  <form action="">
+    <p>お名前<br>
+      <input type="text" name="user_name" class="name"></p>
+      <p>ご用件<br>
+        <select name="require" class="require">
+          <option value="仕事のご依頼">仕事のご依頼</option>
+          <option value="blogの感想">blogの感想</option>
+          <option value="その他お問い合わせ">その他お問い合わせ</option>
+        </select>
+      </p>
+      <p>メッセージ<br>
+        <textarea name="message" class="message" cols="30" rows="10"></textarea></p>
+        <p><input type="submit" value="send" class="submitButton"></p>
+      </form>
+    </section>
+
+<footer class="footer">
+  <ul id="link">
+    <li><a href="profile.html">profile</a></li>
+    <li><a href="application.html">application</a></li>
+    <li><a href="">blog</a></li>
+    <li><a href="hobby.html">hobby</a></li>
+  </ul>
+  ©Higashi Shogo
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+
