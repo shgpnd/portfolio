@@ -1,19 +1,23 @@
 // applicationのslideImageのスライドショーつくる
 let slideImage = document.querySelectorAll('.slideImage');
-let currentNum = 1;
+let currentNum1 = 1;
+let currentNum2 = 1;
+let currentNum3 = 1;
 const csSlide = slideImage[0];
 const bdSlide = slideImage[1];
-console.log(csSlide);
-slideShow(csSlide);
-slideShow(bdSlide);
+const mhSlide = slideImage[2];
+console.log(slideImage[1]);
+slideShow(csSlide, currentNum1);
+slideShow(bdSlide, currentNum2);
+slideShow(mhSlide, currentNum3);
 
 
-function slideShow(slide) {
+function slideShow(slide, num) {
   setInterval(() => {
     for(let i = 0; i < 3; i++) {
       slide.children[i].classList.remove('active');
     }
-    switch (currentNum%3) {
+    switch (num%3) {
       case 1:
         slide.children[0].classList.add('active');
         break;
@@ -24,7 +28,7 @@ function slideShow(slide) {
         slide.children[2].classList.add('active');
         break;
     }
-    currentNum += 1;
+    num += 1;
   }, 3000);
 }
 
