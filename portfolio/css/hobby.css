@@ -1,0 +1,145 @@
+.pageTitle {
+  background: url(../image/billiards.jpg);
+  background-position-y: center;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  border: none;
+}
+
+img + img {
+  margin-bottom: 10px;
+}
+
+.article img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  width: 75%;
+  height: 3000px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+.article h2 {
+  background-color: cornsilk;
+  text-align: center;
+}
+
+.article h3 {
+  background-color: rgb(220, 220, 220);
+  border-left: 10px solid lightblue;
+  line-height: 4em;
+  font-size: 25px;
+  font-weight: normal;
+  width: 85%;
+  margin: 10px auto;
+}
+
+.article h4 {
+  font-size: 20px;
+  margin-left: 50px;
+  background-color: #efefef;
+  max-width: fit-content;
+}
+
+.article p {
+  font-size: 18px;
+  line-height: 2.5em;
+  font-weight: normal;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.asideLink {
+  width: 23%;
+  height: 1000px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.asideNanika {
+  height: 1927px;
+  margin-top: 200px;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.articleLink {
+  margin: 20px 0;
+}
+
+.asideLink img {
+  width: 95%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.asideLink a:hover {
+  opacity: .8;
+  text-decoration:underline ;
+}
+
+.articleLink {
+  margin-bottom: 30px;
+}
+
+.article1 ul {
+  background-color: #bde7ff;
+  border: 1px solid gray;
+  font-size: 15px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.article2 ul {
+  background-color: #bde7ff;
+  border: 1px solid gray;
+  font-size: 15px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+#goldGym {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0 ;
+  margin-left: 5px;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .article h3 {
+    line-height: 3em;
+    font-size: 18px;
+  }
+
+  .article p {
+    font-size: 15px;
+    line-height: 2em;
+  }
+
+  .article {
+    height: 2700px;
+  }
+
+  .asideNanika {
+    height: 1680px;
+  }
+
+
+}

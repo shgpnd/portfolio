@@ -1,0 +1,232 @@
+body {
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #cfe9ff;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.header h1 {
+  width: 100px;
+  height: 100px;
+}
+
+.headerLogo {
+  width: 100px;
+  margin: 30px 30px;
+}
+
+.menu-trigger {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(152, 152, 152);
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.menu-trigger:hover {
+  opacity: .8;
+}
+
+.menu-trigger > span {
+  display: block;
+  height: 4px;
+  width: 30px;
+  border-radius: 4px;
+  margin: 10px auto;
+  background-color: #eee;
+  position: relative;
+  transition: ease .5s;
+}
+
+.menu-trigger > span:nth-child(1) {
+  top: 0;
+}
+.menu-trigger > span:nth-child(2) {
+
+}
+.menu-trigger > span:nth-child(3) {
+  top: 0;
+}
+
+.menu-trigger.active span:nth-child(1) {
+  top: 13px;
+  transform: rotate(45deg);
+}
+
+.menu-trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active span:nth-child(3) {
+  top: -14px;
+  transform: rotate(-45deg);
+}
+
+
+.linkMenu {
+  background-color: #bebebe;
+  transform: translateX(1000px);
+  transition: ease .5s;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 30%;
+  height: 305px;
+  line-height: 3em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.linkMenu.active {
+  transform: translateX(0);
+  opacity: .8;
+  z-index: 10;
+}
+
+
+.linkMenu a {
+  display: inline-block;
+  width: 100%;
+}
+
+.linkMenu li:hover {
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+main {
+  /* width: 80%; */
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  border: 1px solid #bebebe;
+}
+
+.pageTitle {
+  text-align: center;
+  width: 100%;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.pageTitle img {
+  width: 250px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.partation {
+  background-color: rgba(255, 116, 57, 0.279);
+  border-top: thick double black ;
+  border-bottom: thick double rgb(163, 49, 0);
+  height: 60px;
+  display: flex;
+}
+.partation img {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+}
+
+.partation h2 {
+  font-size: 30px;
+  height: 1em;
+  margin-top: 10px;
+}
+
+
+main::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../image/flowers.jpg) no-repeat center/cover;
+  z-index: -1;
+}
+
+
+.contact {
+  background-color:rgb(251, 247, 230);
+  text-align: left;
+  margin-top: 200px;
+}
+
+.contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact p + p {
+  margin: 20px 0;
+}
+
+.name,
+.require,
+.message {
+  width: 100%;
+}
+
+.submitButton {
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 50px;
+}
+
+.contact h2 {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  width:fit-content;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: -50px;
+
+  padding: 10px 0;
+  background-color:#cfe9ff;
+  text-align: center;
+}
+
+.footer ul {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer {
+  background-color: rgb(0, 0, 0);
+  color: darkgrey;
+  padding: 10px 0;
+  margin-top: -20px;
+  text-align: center;
+} */
+
+@media (max-width: 800px) {
+  main {
+    width: 100%;
+  }
+
+}

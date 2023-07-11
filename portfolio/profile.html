@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/profile.css">
+  <title>東のポートフォリオサイト</title>
+</head>
+<body>
+<header>
+  <div class="header">
+    <a href="index.html"><h1><img src="image/titleLogo.png" alt="" class="headerLogo"></h1></a>
+    <div class="menu-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>    
+  </div>
+  <nav class="linkMenu">
+    <ul>
+      <li><a href="index.html">top</a></li>
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="application.html">application</a></li>
+      <li><a href="https://cafeboki.com/">blog</a></li>
+      <li><a href="hobby.html">hobby</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1 class="pageTitle"><img src="image/profileLogo.png" alt=""></h1>
+  <div class="partation">
+    <img src="image/shiba.png" alt="dogIcon">
+    <h2>生年月日と経歴</h2>
+  </div>
+  <section class="text" id="career">
+    <ul>
+      <li>1994年1月5日生まれ</li>
+      <li>最終学歴：広島大学理学部数学科</li>
+      <li>教員・宮大工を経てエンジニアへ転職希望</li>
+    </ul><br>
+    <p>考えることとものを作ることが大好き。考えて何かを作って、それが役に立つなら本望。プログラミングをするために生まれてきたといっても過言ではない！？</p>
+  </section>
+  <div class="partation">
+    <img src="image/shiba.png" alt="dogIcon">
+    <h2>趣味</h2>
+  </div>
+  <section class="text">
+    <ul>
+      <li>コーヒー</li>
+      <li>バイク</li>
+      <li>ビリヤード</li>
+      <li>筋トレ</li>
+    </ul><br>
+    <p>詳しくは<a href="hobby.html">こちらのページで</a>お話しています。ぜひご覧ください！</p>
+  </section>
+  <div class="partation">
+    <img src="image/shiba.png" alt="dogIcon">
+    <h2>ITスキル</h2>
+  </div>
+  <section class="text">
+    <p>現在勉強中の言語は</p><br>
+    <ul style="list-style: circle;margin-left: 30px;">
+      <li>HTML＆CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>swift</li>
+    </ul><br>
+    <p><a href="application.html">こちらのページ</a>で開発済アプリケーションの紹介をしております。</p>
+  </section>
+  <div class="partation">
+    <img src="image/shiba.png" alt="dogIcon">
+    <h2>好きな映画</h2>
+  </div>
+  <section class="text">
+      <p>「<span style="font-weight: bold;font-size: 20px;">グッド・ウィル・ハンティング</span> 」がおすすめ<br>
+        数学の天才の不良青年と精神分析医のヒューマンドラマ。毎回同じ場面で泣きます。</p>
+    </section>
+    <div class="partation">
+      <img src="image/shiba.png" alt="dogIcon">
+      <h2>スポーツ</h2>
+    </div>
+    <section class="text">
+      <p>柔道をやっていました。(中学３年間だけ)一応初段。<br><br>
+        高校から帰宅部で、最近は身体にも気を使って筋トレを始めました！
+      </p>
+    </section>
+    <div class="partation">
+      <img src="image/shiba.png" alt="dogIcon">
+      <h2>目標</h2>
+    </div>
+    <section class="text">
+      <ul style="list-style: circle;margin-left: 30px;">
+        <li>Webページをすらすら作れるようになること</li>
+        <li>SwiftでiOSアプリをリリースすること</li>
+        <li>Pythonに手を出す。Android開発もしたい。</li>
+        <li>腹筋をシックスパックにすること</li>
+      </ul><br>
+      <p>やりたいことは少しずつ、確実に。</p>
+    </section>
+  </main>
+  <section class="contact">
+      <h2>contact</h2>
+      <form action="">
+        <p>お名前<br>
+          <input type="text" name="user_name" class="name"></p>
+          <p>ご用件<br>
+            <select name="require" class="require">
+              <option value="仕事のご依頼">仕事のご依頼</option>
+              <option value="blogの感想">blogの感想</option>
+              <option value="その他お問い合わせ">その他お問い合わせ</option>
+            </select>
+          </p>
+          <p>メッセージ<br>
+            <textarea name="message" class="message" cols="30" rows="10"></textarea></p>
+            <p><input type="submit" value="send" class="submitButton"></p>
+          </form>
+        </section>
+  <footer class="footer">
+    <ul id="link">
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="application.html">application</a></li>
+      <li><a href="">blog</a></li>
+      <li><a href="hobby.html">hobby</a></li>
+    </ul>
+    ©Higashi Shogo
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+
+h3 {
+  font-size: 30px;
+  padding: 10px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background-color: aliceblue;
+}
+
+p > a {
+  padding-left: 70%;
+}
+
+/* main */
+
+main {
+  height: 5462px;
+  /* flex: 1; */
+}
+
+.pageTitle {
+  background: url(../image/application.jpg);
+  background-position-y: center;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.noteLink {
+  border-radius: 10px;
+  background-color: #fff; 
+  background-image: linear-gradient(180deg, #ccc 1px, transparent 1px);
+  background-size: 100% 2.5em; 
+  line-height: 2.5em;
+  padding-bottom: 1px;
+  height: 520px;
+}
+
+.noteLink > ul {
+  margin-left: 20px;
+}
+
+.change-seat, /*ulのmargin*/
+.birthday,
+.monty {
+  margin-left: 50px;
+}
+
+#changeSeatApp, 
+#birthdayApp {
+  background-color: #fff;
+  height: 1650px;
+}
+
+#montyHallApp {
+  background-color: #fff;
+  height: 1000px;
+}
+
+#cs-overview,
+#bd-overview{
+  display: flex;
+  align-items: center;
+}
+
+#cs-app1,
+#bd-app1,
+#mh_app0 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#bd-app1 {
+  object-fit: cover;
+  border: 0.5px solid #ccc;
+}
+
+#changeSeatApp > div { /*写真と文章のフレックス*/
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#birthdayApp {
+  width: 100%;
+}
+
+#montyHall {
+  width: 100%;
+}
+
+#changeSeatApp .slideImage {
+  width: 30%;
+  height: 510px;
+}
+
+#birthdayApp .slideImage {
+  width: 95%;
+  height: 350px;
+  margin: 0px auto;
+  border: 2px dashed lightgray;
+  border-radius: 4px;
+}
+
+#montyHall .slideImage {
+  width: 60%;
+  height: 350px;
+  margin: 0px auto;
+  border: 2px dashed lightgray;
+  border-radius: 4px;
+}
+
+#changeSeatApp > div > p {
+  width: 60%;
+}
+
+.slideImage > img {
+  width: 100%;
+}
+
+#mh_app2,
+#mh_app3,
+#mh_app4 {
+  margin: 0 auto;
+  width: auto;
+  height: 350px;
+}
+
+
+#cs-app2,
+#cs-app3,
+#cs-app4, 
+#bd-app2,
+#bd-app3,
+#bd-app4,
+#mh_app2,
+#mh_app3,
+#mh_app4 {
+  display: none;
+}
+
+#cs-app2.active,
+#cs-app3.active,
+#cs-app4.active, 
+#bd-app2.active,
+#bd-app3.active,
+#bd-app4.active,
+#mh_app2.active,
+#mh_app3.active,
+#mh_app4.active {
+  display: block;
+}
+
+.text {
+  padding: 50px 30px;
+  font-size: 18px;
+}
+
+#cs-motivation, 
+#bd-motivation,
+#mh-motivation {
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+
+#cs-motivation p, 
+#bd-motivation p {
+  padding: 0 30px;
+}
+
+#cs-language,
+#bd-language,
+#mh_overview  {
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+#cs-how-to,
+#bd-how-to {
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .text {
+    padding: 50px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    height: 4552px;
+  }
+
+  .noteLink {
+    display: none;
+  }
+  
+  .partation h2 {
+    font-size: 20px;
+    height: 1em;
+    margin-top: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .pageLink {
+    display: none;
+  }
+
+#changeSeatApp, 
+#birthdayApp {
+  background-color: #fff;
+  height: 1580px;
+}
+
+#montyHallApp {
+  background-color: #fff;
+  height: 900px;
+}
+
+  #birthdayApp .slideImage {
+    padding-top: 10px;
+    height: 250px;
+  }
+
+#montyHallApp .slideImage {
+  padding-top: 10px;
+  height: 350px;
+}
+
+.text {
+  padding: 50px 30px;
+  font-size: 15px;
+}
+
+}
+
+

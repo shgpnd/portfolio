@@ -1,0 +1,20 @@
+/* main */
+
+.pageTitle {
+  background: url(../image/profile.jpg);
+  background-position-y: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  font-size: 18px;
+  padding: 20px 20px;
+  background-color: #fff;
+}
+
+.text p {
+  font-size: 15px;
+}
+
+
